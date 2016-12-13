@@ -1,13 +1,13 @@
 package main
 
 import (
+	"os"
+	"fmt"
+	"bufio"
+	"strings"
 	"net/http"
 	"html/template"
-	"os"
-	"strings"
-	"bufio"
 	"github.com/LimeStall/viewmodels"
-	"fmt"
 )
 
 func main() {

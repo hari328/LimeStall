@@ -6,10 +6,8 @@ type Home struct {
 }
 
 func GetHome() Home {
-	result := Home{
+	return Home{
 		Title: "Lemode Stand Supply",
 		Active: "home",
 	}
-
-	return result
 }
