@@ -20,8 +20,10 @@ func main() {
 
 		var context interface{} = nil
 
-		if requestedFile == "home" {
-			context = viewmodels.GetHome()
+		switch requestedFile {
+		case "home" : context = viewmodels.GetHome()
+
+		case "categories" : context = viewmodels.GetCategories()
 		}
 
 		fmt.Println(context)
